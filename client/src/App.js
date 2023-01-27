@@ -1,4 +1,5 @@
 import BookList from './components/BookList'
+import AddBook from './components/AddBook'
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
 
 const client = new ApolloClient({
@@ -12,6 +13,7 @@ function App() {
       <div id='main'>
         <h1>Sam's reading list</h1>
         <BookList />
+        <AddBook />
       </div>
     </ApolloProvider>
   )
